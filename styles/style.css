@@ -206,6 +206,32 @@ header {
   width: 140px;
   margin-bottom: 120px;
 }
+/* Contact section styles */
+.contact{
+  background-color: #FFF8F3;
+  display: flex;
+  gap: 120px;
+  padding:150px 150px;
+  margin-top: 50px;
+  line-height: 30px;
+  border: none;
+  margin-bottom: 30px;
+}
+.contact input[type="text"], input[type="email"], textarea{
+  margin-bottom: 25px;
+  border: 0;
+  padding:10px 20px;
+  width: 100%;
+}
+.btn-primary {
+  color: #ffffff;
+  height: 55px;
+  background-color: #fd6e0a;
+  border-radius: 5px;
+  padding: 15px 32px;
+  font-weight: 700;
+  margin-right: 20px;
+}
 /* Sponsor Section */
 .sponsor_section {
   text-align: center;
@@ -246,14 +272,12 @@ header {
 }
 /* Responsive Section */
 @media screen and (max-width: 576px) {
-  body {
-    position: absolute;
-  }
   header {
     width: 1300px;
     height: 1200px;
     margin: 0 auto;
   }
+  /* nav section */
   .nav-section {
     display: flex;
     flex-direction: column;
@@ -267,6 +291,7 @@ header {
     flex-direction: column;
     text-align: center;
   }
+  /* banner section */
   .banner-description {
     width: 600px;
     margin-left: 340px;
@@ -276,11 +301,12 @@ header {
     width: 650px;
     margin-right: 450px;
   }
+  /* feature section */
   .feature {
     display: flex;
     flex-direction: column;
     align-content: center;
-    margin-right: 200px;
+    margin-left: 500px;
   }
   .feature_description {
     margin-right: 60px;
@@ -299,15 +325,18 @@ header {
   .feature_list {
     text-align: center;
   }
+  /* feature list section */
+  .list-title {
+    margin-right: 150px;
+  }
   .list_description {
     width: 600px;
-    margin-left: 200px;
+    margin-left: 120px;
   }
   .feature-list-section {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     text-align: center;
-    margin-right: 200px;
   }
   .feature_list_image img {
     margin-left: 120px;
@@ -316,6 +345,7 @@ header {
     margin-top: 100px;
     margin-left: -220px;
   }
+  /* facts section */
   .facts_section {
     margin: 0 auto;
     margin-left: 180px;
@@ -336,12 +366,43 @@ header {
   .fact-list {
     margin-left: 520px;
   }
-  .sponsor_section {
-    margin-left: 200px;
+  /* contact section */
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 650px;
+    flex-direction: column;
   }
-}
-.sponsor_list {
-  display: flex;
-  flex-direction: column;
-  margin-right: 150px;
+  .contact a {
+    display: flex;
+    margin-left: 50px;
+  }
+  .contact>div{
+    text-align: center;
+    justify-content: center;
+    margin-left: -80px;
+    line-height: 40px;
+  }
+  /* sponsor section */
+  .sponsor_title {
+    margin-left: -100px;
+    width: 600px;
+  }
+  .sponsor_description {
+    width: 300px;
+    margin-left: 50px;
+  }
+  .sponsor_section {
+    margin-left: 620px;
+  }
+  .sponsor_list {
+    margin-right: 150px;
+    flex-direction: column;
+  }
+  /* footer section */
+  .footer {
+    width: 400px;
+    margin-left: 600px;
+  }
 }
